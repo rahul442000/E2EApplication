@@ -16,5 +16,11 @@ namespace E2EApplication.Controllers
             new Book { Id = 4, Title = "Pride and Prejudice", Author = "Jane Austen", yearPublished = "1813" },
             new Book { Id = 5, Title = "The Catcher in the Rye", Author = "J.D. Salinger", yearPublished = "1951" }
         };
+
+        [HttpGet]
+        public ActionResult<List<Book>> GetBooks()
+        {
+            return Ok(books);
+        }
     }
 }
