@@ -1,6 +1,11 @@
-@E2EApplication_HostAddress = http://localhost:5289
+@rootURL = http://localhost:5289
 
-GET {{E2EApplication_HostAddress}}/weatherforecast/
+GET {{rootURL}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{rootURL}}/api/books
 Accept: application/json
 
 ###
