@@ -2,9 +2,9 @@
 {
     public class Book
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string yearPublished { get; set; }
+        public int id { get; set; }
+        public required string title { get; set; }
+        public required string author { get; set; }
+        public required string yearPublished { get; set; }
     }
 }
