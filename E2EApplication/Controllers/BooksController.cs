@@ -58,5 +58,16 @@ namespace E2EApplication.Controllers
             existingBook.yearPublished = updateBook.yearPublished;
             return Ok(existingBook);
         }
+        [HttpDelete("{id}")]
+        public ActionResult DeleteBook(int id)
+        {
+            var book = books.FirstOrDefault(b => b.id == id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            books.Remove(book);
+            return NoContent();
+        }
     }
 }
