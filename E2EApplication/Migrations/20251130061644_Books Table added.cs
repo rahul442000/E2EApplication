@@ -5,13 +5,13 @@
 namespace E2EApplication.Migrations
 {
     /// <inheritdoc />
-    public partial class BookModelAdded : Migration
+    public partial class BooksTableadded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Book",
+                name: "BooksData",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace E2EApplication.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Book", x => x.id);
+                    table.PrimaryKey("PK_BooksData", x => x.id);
                 });
         }
 
@@ -30,7 +30,7 @@ namespace E2EApplication.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Book");
+                name: "BooksData");
         }
     }
 }

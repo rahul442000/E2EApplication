@@ -43,7 +43,7 @@ namespace E2EApplication.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Book");
+                    b.ToTable("BooksData");
 
                     b.HasData(
                         new

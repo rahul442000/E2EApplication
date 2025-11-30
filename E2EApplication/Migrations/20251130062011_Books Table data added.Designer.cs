@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E2EApplication.Migrations
 {
     [DbContext(typeof(BookAPIContext))]
-    [Migration("20251129122724_Book data Added")]
-    partial class BookdataAdded
+    [Migration("20251130062011_Books Table data added")]
+    partial class BooksTabledataadded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,7 @@ namespace E2EApplication.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Book");
+                    b.ToTable("BooksData");
 
                     b.HasData(
                         new
