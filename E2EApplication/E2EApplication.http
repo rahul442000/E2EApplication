@@ -24,15 +24,14 @@ Content-Type: application/json
 }
 ###
 
-PUT {{rootURL}}/api/books/5
+PUT {{rootURL}}/api/books/6
 Content-Type: application/json
 {
-  "id": 5,
   "title": "C# Unlocked - Updated Edition",
   "author": "John Doe",
   "yearPublished": "2025"
 }
 ###
-DELETE {{rootURL}}/api/books/5
+DELETE {{rootURL}}/api/books/6
 Accept: application/json
 ###
